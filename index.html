@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cursos de programação</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <p>Domine o desenvolvimento web com metodologias ativas</p>
         <nav>
             <ul>
-                <li><a href="#">sobre o curso</a></li>
+                <li><a href="#">Sobre o curso</a></li>
                 <li><a href="#">modulos</a></li>
                 <li><a href="#">investimentos</a></li>
                 <li><a href="#">inscreva-se</a></li>
@@ -70,12 +71,12 @@
                     <tr>
                         <td>pro</td>
                         <td>aula + mentoria ao vivo</td>
-                        <td>97,00</td>
+                        <td>R$ 97,00</td>
                     </tr>
                     <tr>
                         <td>Ultimate</td>
                         <td>aula</td>
-                        <td>299,00</td>
+                        <td>R$ 299,00</td>
                     </tr>
                 </tbody>
 
@@ -84,6 +85,41 @@
 
             </table>
 
+        </section>
+        <section>
+            <h2>Garanta sua Vaga</h2>
+
+            <form>
+                <label for="nome">Nome Completo</label><br>
+                <input type="text" id="nome" placeholder="Digite seu Nome completo" required><br><br>
+
+                <label for="email">E-mail Profissional</label><br>
+                <input type="text" id="email" placeholder="exemplo@gmail.com"required><br><br>
+                
+                <label for="senha">Senha de Acesso:</label>
+                <input type="password" id="senha" placeholder="******"required> <br><br>
+                <!-- Nivel de experiencia -->
+                <label for="nivel">Nivel de Experiencia:</label>
+                <select name="nivel" id="nivel" required>
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="iniciante">iniciante</option>
+                    <option value="intermediario">intermediario</option>
+                    <option value="Avançado">Avançado</option>
+                    </select> <br><br>
+                
+                    <p>Como prefere estudar</p>
+                <input type="radio" id="presencial" value="presencial"name="modalidade" checked>  
+                <label for="presencial">presencial</label>
+                <input type="radio" id="remoto" value="hibrido"name="modalidade">
+                <label for="remoto">remoto</label>
+                <input type="radio" id="hibrido" value="hibrido" name="modalidade">
+                <label for="hibrido">hibrido</label><br><br>
+
+                <label for="expectativa">Quais sao as suas expectativas</label><br>
+                <textarea name="expectativa" id="expectativa" rows="6" cols="40" ></textarea ><br><br>
+
+                <button>Enviar inscrição</button>
+            </form>
         </section>
         
     
